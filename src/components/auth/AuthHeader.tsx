@@ -1,6 +1,5 @@
 import React, { FunctionComponent } from 'react';
 import {
- TouchableOpacity,
  Pressable, 
  StyleSheet,
  Text,
@@ -26,7 +25,7 @@ const styles = StyleSheet.create({
 });
 
 
-const BackButton: FunctionComponent<BackButtonTypes> = ({ label , handleClick}) => {
+const AuthHeader: FunctionComponent<AuthHeaderTypes> = ({ label , handleClick}) => {
 
   return (
     <Pressable hitSlop={20}  onPress={handleClick} style={styles.main}>
@@ -38,13 +37,13 @@ const BackButton: FunctionComponent<BackButtonTypes> = ({ label , handleClick}) 
 }
 
 
-type BackButtonTypes = {
+type AuthHeaderTypes = {
   label: string,
   handleClick?:  (e: Event) => void;
 }
 
-BackButton.defaultProps = {
+AuthHeader.defaultProps = {
   handleClick: () => {}
 }
 
-export default BackButton;
+export default AuthHeader;
