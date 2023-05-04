@@ -63,9 +63,9 @@ const Splash = ( { route, navigation }: SplashProps ) => {
           <Text  style={styles.title}>Here !</Text>
         </View>
         <Button title="Sign Up" handleClick={handleSignUp} />
-          <Pressable hitSlop={20}  onPress={handleSignIn}>
-            <Text style={styles.signInText}>Sign In</Text>
-          </Pressable>
+        <Pressable hitSlop={20}  onPress={handleSignIn}>
+          <Text style={styles.signInText}>Sign In</Text>
+        </Pressable>
       </View>
     </SafeAreaView>
   );
