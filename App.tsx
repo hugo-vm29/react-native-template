@@ -17,7 +17,7 @@ export type RootStackProps = {
 const RootStackNavigator = createNativeStackNavigator<RootStackProps>();
 
 const App = () => {
-  const isSignedIn = true;
+  const isSignedIn = false;
 
   const customTheme = {
     ...DefaultTheme,
