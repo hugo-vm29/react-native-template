@@ -28,7 +28,7 @@ const AuthHeader: FunctionComponent<AuthHeaderTypes> = ({
       <Image
         resizeMode="contain"
         style={styles.arrowIcon}
-        source={require('../assets/backArrow.png')}
+        source={require('../../assets/backArrow.png')}
       />
       <Text style={styles.label}>{label}</Text>
     </Pressable>
