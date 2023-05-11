@@ -6,12 +6,14 @@ import {NavigationContainer, DefaultTheme} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import Tabs from './src/navigation/TabNavigation';
+import Scanner from './src/screens/app/Scanner';
 
 export type RootStackProps = {
   Splash: undefined;
   SignUp: undefined;
   SignIn: undefined;
   Tabs: undefined;
+  // Scanner: undefined,
 };
 
 const RootStackNavigator = createNativeStackNavigator<RootStackProps>();
@@ -34,6 +36,7 @@ const App = () => {
           {isSignedIn ? (
             <>
               <RootStackNavigator.Screen name="Tabs" component={Tabs} />
+              {/* <RootStackNavigator.Screen name="Scanner" component={Scanner} /> */}
             </>
           ) : (
             <>

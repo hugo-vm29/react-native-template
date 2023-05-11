@@ -19,7 +19,9 @@ const SignUp = ({navigation}: SignUpProps) => {
     navigation.goBack();
   };
 
-  const onClickSignUp = () => {};
+  const onClickSignUp = () => {
+    //console.log('click sign up');
+  };
 
   return (
     <SafeAreaView>
