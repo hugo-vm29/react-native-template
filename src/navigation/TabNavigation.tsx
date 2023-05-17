@@ -3,10 +3,12 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Home from '../screens/app/Home';
 import Profile from '../screens/app/Profile';
+import Scanner from  '../screens/app/Scanner'
 
 export type RootTabProps = {
   Home: undefined;
   Profile: undefined;
+  Scan: undefined;
 };
 
 /* eslint-disable react/no-unstable-nested-components */
@@ -36,6 +38,15 @@ const Tabs = () => {
         options={{
           tabBarIcon: ({color, size}) => (
             <FontAwesome5 name="user" color={color} size={size} />
+          ),
+        }}
+      />
+      <RootTabNavigator.Screen
+        name="Scan"
+        component={Scanner}
+        options={{
+          tabBarIcon: ({color, size}) => (
+            <FontAwesome5 name="camera" color={color} size={size} />
           ),
         }}
       />

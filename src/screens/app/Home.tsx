@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <SafeAreaView>
       <View style={styles.container}>
-        <Text> HOME </Text>
+        <Text> HOME !! </Text>
       </View>
     </SafeAreaView>
   );
